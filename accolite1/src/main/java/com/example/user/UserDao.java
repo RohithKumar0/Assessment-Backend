@@ -73,6 +73,10 @@ public class UserDao {
 	}
 	
 
+	@GetMapping("{id}/admin")
+	public AuthResonse makeAdmin(@PathVariable("id") int id) {
+		return userService.makeadmin(id);
+	}
 	
 //to add makeAdmin
 	
